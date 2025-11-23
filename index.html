@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEDIT - Front Page of the Internet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">FEDIT</a></h1>
+            </div>
+            <nav class="nav">
+                <div id="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div id="user-menu" style="display: none;">
+                    <span id="username"></span>
+                    <a href="create_post.html" class="btn btn-primary">Create Post</a>
+                    <button id="logout-btn" class="btn btn-outline">Logout</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <div class="content">
+            <div class="posts-container" id="posts-container">
+                <!-- Posts will be loaded here -->
+            </div>
+        </div>
+        
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Popular Communities</h3>
+                <div class="community-item">
+                    <a href="#" data-community="programming">r/programming</a>
+                </div>
+                <div class="community-item">
+                    <a href="#" data-community="gaming">r/gaming</a>
+                </div>
+                <div class="community-item">
+                    <a href="#" data-community="movies">r/movies</a>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>About FEDIT</h3>
+                <p>FEDIT is a community-based platform for sharing and discussing content.</p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="mock-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
